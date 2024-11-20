@@ -8,19 +8,26 @@
 /* Background animation */
 .background {
     background: linear-gradient(45deg, #ff7f7f, #ff9a8b);
+    background-size: 400% 400%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: moveBackground 5s ease-in-out infinite;
+    animation: gradientMove 10s ease infinite;
 }
 
-@keyframes moveBackground {
+@keyframes gradientMove {
     0% {
         background: linear-gradient(45deg, #ff7f7f, #ff9a8b);
     }
+    25% {
+        background: linear-gradient(45deg, #fbc2eb, #a6c1ee);
+    }
     50% {
-        background: linear-gradient(45deg, #9bdef3, #a3d8ff);
+        background: linear-gradient(45deg, #ff9a8b, #fbc2eb);
+    }
+    75% {
+        background: linear-gradient(45deg, #a6c1ee, #ff7f7f);
     }
     100% {
         background: linear-gradient(45deg, #ff7f7f, #ff9a8b);
