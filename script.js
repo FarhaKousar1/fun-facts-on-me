@@ -1,3 +1,4 @@
+// Fun Facts Array
 const facts = [
     "I love to drink chai/tea!",
     "I love learning new programming languages!",
@@ -8,14 +9,13 @@ const facts = [
     "I enjoy volunteering and giving back to the community.",
     "I’m passionate about AI and Machine Learning.",
     "I like to explore AI and tech.",
-    "I'm a sharp observer and remember people's background quickly.",
-    "I like to learn from my mistakes and be inspired by others.",
-    "I often think my ideas are unique, but they’ve already been done by others.",
-    "I am always exploring new technologies in AI and machine learning.",
-    "I love collaborating on innovative tech projects.",
-    "I am constantly refining my skills through hands-on experience and learning.",
-    "I love challenges and embrace problem-solving.",
-    "I'm an advocate for lifelong learning.",
-    "I enjoy reading about the future of tech and how it will change the world.",
-    "I like to unwind by watching documentaries about technology and science."
+    "I have a sharp memory and can quickly remember people's backgrounds.",
+    "I learn from my mistakes and get inspired by others.",
+    "My thoughts may seem unique, but they’ve often been done by others."
 ];
+
+// Generate Random Fact
+function generateFact() {
+    const randomIndex = Math.floor(Math.random() * facts.length);
+    document.getElementById("fact").textContent = facts[randomIndex];
+}
