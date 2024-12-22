@@ -11,7 +11,8 @@ const facts = [
     "I like to explore AI and tech.",
     "I have a sharp memory and can quickly remember people's backgrounds.",
     "I learn from my mistakes and get inspired by others.",
-    "My thoughts may seem unique, but they’ve often been done by others."
+    "My thoughts may seem unique, but they’ve often been done by others.
+    "i like learn new things"
 ];
 
 // Generate Random Fact
